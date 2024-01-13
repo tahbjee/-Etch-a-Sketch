@@ -1,0 +1,30 @@
+h2 {
+  color: grey;
+  font-size: 50px;
+}
+
+body {
+  display: grid;
+  place-items: center; /* Center the grid within the body */
+  height: 100vh;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 80px);
+  height: 500px;
+  height: 500px;
+  border: 1px solid #ccc;
+}
+
+.sixteenDivs {
+  background-color: firebrick;
+  /* height: 50px;
+  width: 50px; */
+}
+
+/* .sixteenDivs:hover {
+  background-color: ;
+} */
