@@ -3,13 +3,15 @@ function createDivs(num) {
     let container = document.querySelector(".container");
     let newDiv = document.createElement("div");
 
-    newDiv.className = "sixteenDivs";
+    newDiv.className = "createdDivs";
 
     container.appendChild(newDiv);
   }
 }
 
-createDivs(64);
+let theDivs = prompt("");
+
+createDivs(theDivs);
 
 function getRandomColor() {
   let randomR = Math.floor(Math.random() * 256);
@@ -19,16 +21,10 @@ function getRandomColor() {
   return `rgb(${randomR},${randomG},${randomB})`;
 }
 
-let elements = document.querySelectorAll(".sixteenDivs");
+let elements = document.querySelectorAll(".createdDivs");
 
 elements.forEach(function (element) {
   element.addEventListener("mouseover", () => {
     element.style.backgroundColor = getRandomColor();
   });
 });
-
-// function selectDiv() {
-//   let color = getRandomColor();
-
-//   element.style.backgroundColor = color;
-// }

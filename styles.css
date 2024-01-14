@@ -5,7 +5,7 @@ h2 {
 
 body {
   display: grid;
-  place-items: center; /* Center the grid within the body */
+  place-items: center;
   height: 100vh;
   margin: 0;
   border: 0;
@@ -13,7 +13,7 @@ body {
 }
 .container {
   display: grid;
-  grid-template-columns: repeat(8, 80px);
+  grid-template-columns: repeat(8, 100px);
   height: 500px;
   height: 500px;
   border: 1px solid #ccc;
@@ -21,10 +21,4 @@ body {
 
 .sixteenDivs {
   background-color: firebrick;
-  /* height: 50px;
-  width: 50px; */
 }
-
-/* .sixteenDivs:hover {
-  background-color: ;
-} */
