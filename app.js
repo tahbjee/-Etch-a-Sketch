@@ -1,40 +1,25 @@
-sizeOfGrids = 10;
+const sizeOfGrid = 4;
 
-let container = document.querySelector(".container");
+const container = document.querySelector(".container");
 
-let resetButton = document.querySelector("button");
+const createGrid = (amtOfGrid) => {
+  for (let i = 0; i < amtOfGrid; i++) {
+    const row = document.createElement("div");
+    row.classList.add("grid-row");
 
-function createDivs(amtOfGrids) {
-  const wrapper = document.createElement("div");
-  wrapper.classList.add("wrapper");
-
-  for (let i = 0; i < amtOfGrids; i++) {
-    const newDiv = document.createElement("div");
-    newDiv.classList.add = "new-divs";
-
-    for (let j = 0; j < amtOfGrids; j++) {
-      const widthAndHeight = 500 / sizeOfGrids;
+    for (let j = 0; j < amtOfGrid; j++) {
+      const widthAndHeight = 960 / sizeOfGrid;
       const gridBox = document.createElement("div");
       gridBox.classList.add("grid-box");
       gridBox.style.width = `${widthAndHeight}px`;
       gridBox.style.height = `${widthAndHeight}px`;
-
-      newDiv.appendChild(gridBox);
+      row.appendChild(gridBox);
     }
-    container.appendChild(newDiv);
+    container.appendChild(row);
   }
-}
+};
 
-resetButton.addEventListener("click", () => {
-  let userSize = Number(prompt("Select the size"));
-
-  while (userSize > 100) {
-    userSize = Number(
-      prompt("Make sure to select a number that is equal to or less than 100. ")
-    );
-  }
-  createDivs(userSize);
-});
+createGrid(sizeOfGrid);
 
 function getRandomColor() {
   let randomR = Math.floor(Math.random() * 256);
@@ -51,11 +36,3 @@ elements.forEach(function (element) {
     element.style.backgroundColor = getRandomColor();
   });
 });
-
-function getRandomColor() {
-  let randomR = Math.floor(Math.random() * 256);
-  let randomG = Math.floor(Math.random() * 256);
-  let randomB = Math.floor(Math.random() * 256);
-
-  return `rgb(${randomR},${randomG},${randomB})`;
-}

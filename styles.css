@@ -1,27 +1,26 @@
 h2 {
   color: grey;
-  font-size: 50px;
+  font-size: 960pxx;
 }
 
 body {
   margin: 0;
   border: 0;
-  box-sizing: border-box;
 }
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
-
+  height: 960px;
+  width: 960px;
   border: 1px solid #cccccc2b;
 }
 
-.newDivs {
+/* .grid-row {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .grid-box {
   /* border: 1px solid blue; */
