@@ -8,7 +8,7 @@ A simple grid painting application using HTML, CSS, and JavaScript.
 
 ## Description
 
-This project allows users to create a grid and paint individual cells with random colors as they hover over them. The grid size is customizable, and users can reset the grid to try different sizes.
+This project allows users to create a grid and paint individual divs with random colors as the user hovers over them. The grid size is customizable from 1 to 100 pixels, and users can reset the grid to try different sizes simply by 'shaking the Etch A Sketch'.
 
 ## Demo
 
