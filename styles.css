@@ -22,9 +22,9 @@ h2 {
 }
 
 .reset-page button {
-  /* border: none; */
-  padding: 0; /* Remove default padding */
-  background: none; /* Remove default background */
+ 
+  padding: 0;
+  background: none;
   cursor: pointer;
   border-color: firebrick;
 }
